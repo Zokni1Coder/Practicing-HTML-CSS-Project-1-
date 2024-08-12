@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#menuBar{
+    background-color: blue;
+    padding: 0.5%;
+    text-align: center;
+    width: 99%;
+    left: 0px;
+    right: 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#menuBar:hover{
+    padding: 15px;
+    transition: 0.5s;
+    width: auto;
+}
+#menuBar li{   
+    display:inline;
+    list-style-type: none;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    height: auto;
+    font-size: 2.5vw;
+}
+#menuBar a:hover{
+    color: blue;
+    background-color: #d3dbed;    
+    transition: 0.5s;
+    padding: 16px;
+    text-shadow: 1px 1px black;
+}
+#menuBar p:hover{
+    color: white; 
+    transition: 0.5s;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+#menuBar a, p{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+#menuBar a:visited{
+    text-decoration: none;
+}
+.leugroResz a {
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.leugroResz {
+    display: none;
+    position: absolute;
+    left: -50%;
+    background-color: blue;
+    min-width: 160px;
+    box-shadow: 2px 2px black;
+    z-index: 1;
+}
+.leugro {
+    position: relative;
+    display: inline-block;
+  }
+.leugroRessz a:hover {
+    background-color: #d3dbed;
+    text-shadow: 2px 2px black;
+}
+.leugro:hover .leugroResz {
+    display: block;
+    text-shadow: 2px 2px black;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Images/hatter.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#nev{
+    font-size: 7.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 15%;
+}
+#en{
+    text-shadow: 5px 5px black;
+}
+#szak{
+    text-shadow: 5px 5px black;
+    font-size: 5.5vw;
+    padding-top: 30px;
+}
+#papir{
+    width: 70%;
+    background-image: url(../Images/papir.jpg);
+    margin: auto; 
+    margin-top: 10%;  
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-width: 500px;
+}
+#cim{
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-shadow: 2px 2px white;
+    color: blue;
+}
+#kep{
+    text-align: center;
+}
+#profkp{
+    height: auto;
+    width: 35%;
+    border-radius: 50%;
+    padding-bottom: 2%;
+}
+#szoveg {
+    text-align: center;
+    padding: 2%;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 2px 2px white;
+    font-style:italic;
+}
+#szoveg h3{
+    padding: 1%;  
+    font-size: 2vw;  
+}
+#profkp:hover{
+    width: 40%;
+    transition: 0.5s;
+}
+#papir h2{
+    padding: 1%;  
+    font-size: 2.5vw;
+    color:blue;
+    text-shadow: 2px 2px white;
+}
+#papir h3{
+    padding: 1%;  
+    font-size: 2vw;
+}
+#tabla{
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    padding: 3%;
+    font-size: 2vw;
+}
+#fks{
+    width: 20%;
+    padding: 2%;
+    text-align: center;
+}
+#cvresz li{
+    display: inline;
+}
+#linkek{
+    text-align: center;
+    padding: 10%;
+    font-size: 2vw;
+    font-weight: bold;
+}
+#linkek a{
+    text-decoration: none;
+    color: white;
+    margin: 5%;
+}
+#linkek li{
+    background-color: blue;
+    font-size:larger;
+    font-size: 2vw;
+}
+#linkek a:hover{ 
+    transition: 0.5s;
+    padding: 15px;
+    text-shadow: 2px 2px black;
+    background: none;
+}
+#oratabla th, td {
+    border:2px solid black;
+    margin: auto;
+    text-align: center;
+    font-size: 2vw;
+}
+#oratabla{
+    margin: auto;
+    padding: 3%;
+}
+.gKepek{
+    width: 10vw;
+    height: 10vw;
+}
+.gKepek:hover{
+    box-shadow: 3px 3px 3px 3px black;
+    transition: 0.5s;
+}
+.sor{  
+    clear: both;
+    display: table;
+    text-align: center;
+    margin: auto;
+    padding-top: 2%;
+}
+.oszlop{
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+}
+.galCim{
+    font-size: 2.5vw;
+    color: blue;
+    text-shadow: 2px 2px white;
+    text-align: center;
+    font-style: italic;
+}
+.kepCim{
+    font-size: 1.5vw;
+    color: blue;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+}
+.galPapir{
+    width: 70%;
+    background-image: url(../Images/papir.jpg);
+    margin: auto; 
+    margin-top: 10%;  
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-width: 500px;
+}
+#konyvjelzo{
+    padding: 0% 2% 0% 1%;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5vw;
+    background-color: blue;
+    width: 10%;
+    position:fixed;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    margin-top: 5%;
+}
+#konyvjelzo a{
+    cursor: pointer;
+    color: white;
+    font-size: large;
+    display: block;
+    padding: 5% 0% 5% 0%;
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+    margin: auto;
+}
+#konyvjelzo a:hover{  
+    transition: 0.5s;
+    padding: 5%;
+    padding-left: 15%;
+    text-shadow: 2px 2px black;
+    margin: auto;
+}
+.infok ul{
+    display: block;
+}
+.infok{
+    padding: 0.5%;
+    display: block;
+    text-align: left; 
+}
+.honap {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 70px 25px;
+    width: 70%;
+    background: blue;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+.honap ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.honap ul li {
+    color: white;
+    font-size: large;
+    text-shadow: 2px 2px black;
+    font-size: 2vw;
+}
+.het {
+    margin: auto;
+    width: 70%;
+    padding: 1% 0;
+    background-color: #ddd;
+}
+.het li {
+    display: inline-block;
+    width: 13%;
+    color: #666;
+    text-align: center;
+}
+.napok {
+    padding: 1% 0;
+    background: #eee;
+    margin: auto;
+    width: 70%;
+}
+.napok li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    font-size:2vw;
+    color: #777;
+}
+.atcsuszo{
+    color: red;
+    background-color: #666;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#papir iframe{
+    width: 25%;
+    padding: 1%;
+    height: 15vw;
+}
+.video{
+    display: inline;
+    margin: 0.5%;
+}
+.videok{
+    text-align: center;
+}
+.nyilak{
+    display: inline;
+    padding: 0% 2% 0% 2%;
+    background-color: #d3dbed;
+    font-size: 6vw;
+    background-color: blue;
+}
+.nyilak:hover{
+    background-color: #d3dbed;
+    transition: 0.5s;
+}
+#balnyil{
+    border-bottom-left-radius: 35%;
+}
+#jobbnyil{
+    border-bottom-right-radius: 35%;
+}
+.konzol{
+    clear: both;
+    text-align: center;
+}
+.konzol a{
+    color: white;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+.konzol a:hover{
+    color: blue;
+    transition: 0.5s;
+}
+#zeneControll{
+    text-align: center;
+}
+iframe{
+    border: 0;
+}
+#lathatatlanTd{
+    border: none;
+}
+#sakktabla{
+    margin: auto;
+    margin-top: 10%;
+    padding: 0%;   
+    font-size: 1vw;
+}
+#sakktabla td{
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+#sakktabla,tr,td{
+    border-collapse: collapse;
+}
+#sakktabla img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: -5%;
+}
+.keretTeteje{
+    border: #41210a;
+    border-top: 2px solid #b18563;
+    border-bottom: 2px solid #41210a;
+    background-color: #41210a;
+    transform: rotate(-180deg);
+}
+.keretAlja{
+    border:none;
+    border-bottom: 2px solid #b18563;
+    background-color: #41210a;
+}
+.balFelsoSarok{
+    border-top: #b18563 2px solid;
+    border-left: #b18563 2px solid;
+    border-right: none;
+    border-bottom: none;
+    background-color: #41210a;
+}
+.balSzele{
+    border-left:  #b18563 2px solid;
+    border-top: #41210a;
+    border-right: #41210a;
+    border-bottom: #41210a;
+    background-color: #41210a;
+}
+.balAlsoSarok{
+    border-top: #41210a;
+    border-left: #b18563 2px solid;
+    border-right: #41210a;
+    border-bottom: #b18563 2px solid;
+    background-color: #41210a;
+}
+.jobbFelsoSarok{
+    border-top: #b18563 2px solid;
+    border-right: #b18563 2px solid;
+    border-left: none;
+    border-bottom: none;
+    background-color: #41210a;
+}
+.jobbSzele{
+    border-left: 2px solid #41210a;
+    border-top: 2px solid #41210a;
+    border-right: 2px solid #b18563;
+    border-bottom: none;
+    background-color: #41210a;
+    transform: rotate(-180deg);
+}
+.jobbAlsoSarok{
+    border-top: 2px solid #41210a;
+    border-right: #b18563 2px solid;
+    border-left: #41210a;
+    border-bottom: #b18563 2px solid;
+    background-color: #41210a;
+}
+.belsoMezoFeher{
+    border: none;
+    background-color: white;
+}
+.belsoMezoFekete{
+    border: none;
+    background-color: #808080;
+}
